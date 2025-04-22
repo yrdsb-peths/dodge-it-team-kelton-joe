@@ -9,5 +9,8 @@ public class MyWorld extends World {
         
         Balloon balloon = new Balloon();
         addObject(balloon, 600, 100);
+        
+        SlowBalloon slowBalloon = new SlowBalloon();
+        addObject(slowBalloon, 600, 300);
     }
 }
