@@ -22,6 +22,7 @@ public class Balloon extends Actor
             SadFace sadFace = new SadFace();
             getWorld().addObject(sadFace, 300, 200);
             getWorld().removeObject(this);
+            MyWorld.stop();
         }
     }
 

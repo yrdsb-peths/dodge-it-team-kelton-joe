@@ -12,6 +12,7 @@ public class SlowBalloon extends Actor
             SadFace sadFace = new SadFace();
             getWorld().addObject(sadFace, 300, 200);
             getWorld().removeObject(this);
+            MyWorld.stop();
         }
     }
 
