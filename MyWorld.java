@@ -4,12 +4,10 @@ public class MyWorld extends World {
     public MyWorld() {
         super(600, 400, 1);
         
-<<<<<<< Updated upstream
         Hero hero = new Hero();
         addObject(hero, 100, 100);
-=======
+        
         Balloon balloon = new Balloon();
         addObject(balloon, 600, 100);
->>>>>>> Stashed changes
     }
 }
