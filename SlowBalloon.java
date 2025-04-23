@@ -12,20 +12,20 @@ public class SlowBalloon extends Actor
         if (speed <= maxSpeed) {
             speed = maxSpeed;
         }
-        move(speed);
+        
+        if (!(MyWorld.isStopped)) {
+            move(speed);
+        }
             
         if (getX() <= 0) {
             resetBalloon();
         }
+        
         if (isTouching(Hero.class)) {
             SadFace sadFace = new SadFace();
             getWorld().addObject(sadFace, 300, 200);
             getWorld().removeObject(this);
             MyWorld.stop();
-        }
-        
-        if (MyWorld.isStopped) {
-            getWorld().removeObject(this);
         }
     }
 
