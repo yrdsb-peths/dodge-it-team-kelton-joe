@@ -2,6 +2,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Hero extends Actor
 {
+    public Hero() {
+        setImage("images/tux.png");
+    }
     public void act()
     {
         if (MyWorld.isStopped == false) {
