@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Balloon extends Actor
 {
     private int speed = -7;
-    private final int maxSpeed = -18;
+    private final int maxSpeed = -15;
     
     public void act() {
         if (speed <= maxSpeed) {
