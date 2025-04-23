@@ -19,7 +19,8 @@ public class MyWorld extends World {
         isStopped = false;
         
         Hero hero = new Hero();
-        addObject(hero, 100, 100);
+        int randomSpawn = Greenfoot.getRandomNumber(8);
+        addObject(hero, 100, (randomSpawn+1)*50);
         
         Balloon balloon = new Balloon();
         addObject(balloon, 600, 100);
