@@ -2,6 +2,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Balloon extends Actor
 {
+    public Balloon() {
+        setImage("images/balloon3.png");
+    }
+    
     private int speed = -7;
     private final int maxSpeed = -15;
     
