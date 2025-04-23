@@ -2,8 +2,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class SlowBalloon extends Actor
 {
+    private int speed = -3;
+    
     public void act() {
-        move(-3);
+        move(speed);
             
         if (getX() <= 0) {
             resetBalloon();
@@ -19,5 +21,6 @@ public class SlowBalloon extends Actor
     public void resetBalloon() {
         int num = Greenfoot.getRandomNumber(4);
         setLocation(600, (num+1)*100);
+        speed--;
     }
 }
