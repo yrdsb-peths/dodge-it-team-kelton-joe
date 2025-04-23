@@ -34,5 +34,6 @@ public class Balloon extends Actor
         int num = Greenfoot.getRandomNumber(8);
         setLocation(600, (num+1)*50);
         speed--;
+        Hero.incrementSpeed();
     }
 }

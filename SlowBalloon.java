@@ -33,5 +33,6 @@ public class SlowBalloon extends Actor
         int num = Greenfoot.getRandomNumber(4);
         setLocation(600, (num+1)*100);
         speed--;
+        Hero.incrementSpeed();
     }
 }
