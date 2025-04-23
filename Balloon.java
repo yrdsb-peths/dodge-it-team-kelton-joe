@@ -25,6 +25,10 @@ public class Balloon extends Actor
             getWorld().removeObject(this);
             MyWorld.stop();
         }
+        
+        if (MyWorld.isStopped) {
+            getWorld().removeObject(this);
+        }
     }
 
     public void resetBalloon() {
