@@ -18,6 +18,8 @@ public class MyWorld extends World {
     
     public void start() {
         isStopped = false;
+        gameScore = 0;
+        this.showText(Integer.toString(MyWorld.gameScore), 25, 25);
         
         Hero hero = new Hero();
         int randomSpawn = Greenfoot.getRandomNumber(8);
