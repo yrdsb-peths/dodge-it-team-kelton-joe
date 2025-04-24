@@ -20,6 +20,8 @@ public class Balloon extends Actor
             
         if (getX() <= 0) {
             resetBalloon();
+            MyWorld.gameScore++;
+            getWorld().showText(Integer.toString(MyWorld.gameScore), 25, 25);
         }
         
         if (isTouching(Hero.class)) {

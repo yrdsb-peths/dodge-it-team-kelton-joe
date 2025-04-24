@@ -2,6 +2,7 @@ import greenfoot.*;
 
 public class MyWorld extends World {
     public static boolean isStopped = false;
+    public static int gameScore = 0;
     
     public MyWorld() {
         super(600, 400, 1);
