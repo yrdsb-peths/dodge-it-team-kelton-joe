@@ -2,8 +2,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Hero extends Actor
 {
-    private static int speed = 5;
-    private final int maxSpeed = 8;
+    private static final int startSpeed = 5;
+    private static int speed = startSpeed;
+    private final int maxSpeed = 12;
+    private static double realSpeed = startSpeed;
     
     public Hero() {
         setImage("images/tux.png");
@@ -25,6 +27,12 @@ public class Hero extends Actor
     }
     
     public static void incrementSpeed() {
-        speed++;
+        realSpeed += 0.5f;
+        speed = (int)(realSpeed + 0.5);
+    }
+    
+    public static void resetSpeed() {
+        speed = startSpeed;
+        realSpeed = startSpeed;
     }
 }
