@@ -10,7 +10,7 @@ public class MyWorld extends World {
     }
     
     public void act() {
-        if (Greenfoot.mouseClicked(null) && isStopped) {
+        if (Greenfoot.isKeyDown("r") && isStopped) {
             removeObjects(getObjects(null));
             start();
         }
